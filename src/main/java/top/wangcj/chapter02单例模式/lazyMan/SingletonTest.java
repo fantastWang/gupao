@@ -1,6 +1,4 @@
-package top.wangcj.chapter02单例模式;
-
-import top.wangcj.chapter02单例模式.lazyMan.ExecuteThread;
+package top.wangcj.chapter02单例模式.lazyMan;
 
 /**
  * @author wangchaojie
