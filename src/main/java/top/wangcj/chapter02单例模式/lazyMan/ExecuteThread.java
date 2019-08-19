@@ -1,5 +1,7 @@
 package top.wangcj.chapter02单例模式.lazyMan;
 
+import top.wangcj.chapter02单例模式.ThreadLocal.ThreadLocalSingleton;
+
 /**
  * 模拟执行线程，去创建单例对象
  * @author wangchaojie
@@ -9,7 +11,8 @@ package top.wangcj.chapter02单例模式.lazyMan;
 public class ExecuteThread implements Runnable {
     @Override
     public void run() {
-        OptimizeLazyMan02 instance = OptimizeLazyMan02.getInstance();
-        System.out.println(Thread.currentThread().getName() + "：" + instance);
+        System.out.println(Thread.currentThread().getName() + "：" + LazyMan.getInstance());
+        System.out.println(Thread.currentThread().getName() + "：" + LazyMan.getInstance());
+        System.out.println(Thread.currentThread().getName() + "：" + LazyMan.getInstance());
     }
 }

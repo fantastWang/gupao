@@ -15,12 +15,24 @@ public class ContainerSingleton {
 
     }
 
+    /**
+     * 虽然ConcurrentHashMap是线程安全的类，但是实际上线程不安全的方法是getInstance()
+     */
     private static Map<String, Object> singleton = new ConcurrentHashMap<>();
 
-    public static ContainerSingleton getBean(String className) {
-        if (!singleton.containsKey(className)) {
-            Object obj = new ContainerSingleton();
+    public static Object getInstance(String className) {
+        synchronized (singleton){
+            if (!singleton.containsKey(className)) {
+                Object obj = null;
+                try {
+                    obj = Class.forName(className).newInstance();
+                    singleton.put(className, obj);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+                return obj;
+            }
+            return singleton.get(className);
         }
-        return null;
     }
 }
