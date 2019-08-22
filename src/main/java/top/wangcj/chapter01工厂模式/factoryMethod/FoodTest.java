@@ -1,4 +1,4 @@
-package top.wangcj.chapter01简单工厂模式.factoryMethod;
+package top.wangcj.chapter01工厂模式.factoryMethod;
 
 /**
  * @author wangchaojie

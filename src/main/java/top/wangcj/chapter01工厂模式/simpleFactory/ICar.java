@@ -1,4 +1,4 @@
-package top.wangcj.chapter01简单工厂模式.simpleFactory;
+package top.wangcj.chapter01工厂模式.simpleFactory;
 
 /**
  * 汽车接口定义
