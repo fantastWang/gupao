@@ -14,9 +14,9 @@ public class Chef {
 
     public Chef() {
         //记录每个厨师擅长的菜系
-        this.cooker.put("徽菜", new AnhuiCuisine());
-        this.cooker.put("粤菜", new GudongCuisine());
-        this.cooker.put("湘菜", new HunanCuisine());
+        cooker.put("徽菜", new AnhuiCuisine());
+        cooker.put("粤菜", new GudongCuisine());
+        cooker.put("湘菜", new HunanCuisine());
     }
 
     /**
@@ -25,6 +25,6 @@ public class Chef {
      * @param command
      */
     public void command(String command) {
-        this.cooker.get(command).cook(command);
+        cooker.get(command).cook(command);
     }
 }
