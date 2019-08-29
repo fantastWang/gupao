@@ -1,4 +1,4 @@
-package top.wangcj.chapter04代理模式.staticProxy;
+package top.wangcj.chapter04代理模式.staticProxy.basics;
 
 /**
  * 顾客

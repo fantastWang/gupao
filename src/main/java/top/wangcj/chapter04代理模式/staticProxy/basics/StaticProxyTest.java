@@ -1,4 +1,4 @@
-package top.wangcj.chapter04代理模式.staticProxy;
+package top.wangcj.chapter04代理模式.staticProxy.basics;
 
 /**
  * 静态代理测试类
@@ -10,6 +10,6 @@ package top.wangcj.chapter04代理模式.staticProxy;
 public class StaticProxyTest {
     public static void main(String[] args) {
         ChefProxy proxy = new ChefProxy(new Customer());
-        proxy.cook();
+        proxy.eat();
     }
 }
