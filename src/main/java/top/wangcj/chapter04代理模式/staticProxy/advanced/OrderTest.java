@@ -9,7 +9,7 @@ public class OrderTest {
     public static void main(String[] args) {
         Order order = new Order();
         order.setDate("2019");
-        new OrderServiceImpl();
-        new DataSourceSwitchProxy(new OrderServiceImpl()).add(order);
+        OrderServiceImpl orderService = new OrderServiceImpl();
+        new DataSourceSwitchProxy(orderService).add(order);
     }
 }
