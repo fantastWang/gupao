@@ -1,7 +1,6 @@
 package top.wangcj.chapter04代理模式.dynamicProxy.wcjProxy;
 
 import java.lang.reflect.Method;
-import java.lang.reflect.Proxy;
 
 /**
  * @author wangchaojie
