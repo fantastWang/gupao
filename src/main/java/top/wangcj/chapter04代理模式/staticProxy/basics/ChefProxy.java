@@ -7,9 +7,9 @@ package top.wangcj.chapter04代理模式.staticProxy.basics;
  */
 public class ChefProxy implements Person {
 
-    private Person person;
+    private Customer person;
 
-    public ChefProxy(Person person) {
+    public ChefProxy(Customer person) {
         this.person = person;
     }
 

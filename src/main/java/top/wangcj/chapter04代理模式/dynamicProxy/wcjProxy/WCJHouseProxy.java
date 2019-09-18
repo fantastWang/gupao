@@ -12,9 +12,9 @@ public class WCJHouseProxy implements WCJInvocationHandler {
     /**
      * 持有对象的引用
      */
-    private Person person;
+    private Object person;
 
-    public Object getInstance(Person person) {
+    public Object getInstance(Object person) {
         this.person = person;
         Class<?> clazz = person.getClass();
         return WCJProxy.newProxyInstance(new WCJClassLoader(), clazz.getInterfaces(), this);

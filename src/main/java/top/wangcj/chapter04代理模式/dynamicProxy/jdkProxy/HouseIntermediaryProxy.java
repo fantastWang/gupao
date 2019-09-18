@@ -14,9 +14,9 @@ public class HouseIntermediaryProxy implements InvocationHandler {
     /**
      * 持有对象的引用
      */
-    private Person person;
+    private Object person;
 
-    public Object getInstance(Person person) {
+    public Object getInstance(Object person) {
         this.person = person;
         Class<?> clazz = person.getClass();
         return Proxy.newProxyInstance(clazz.getClassLoader(), clazz.getInterfaces(), this);
