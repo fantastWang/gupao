@@ -1,9 +1,5 @@
 package top.wangcj.chapter04代理模式.dynamicProxy.jdkProxy;
 
-import sun.misc.ProxyGenerator;
-
-import java.io.FileOutputStream;
-
 /**
  * @author wangchaojie
  * @description 测试类
@@ -11,16 +7,16 @@ import java.io.FileOutputStream;
  */
 public class JdkProxyTest {
     public static void main(String[] args) {
-        Person person = (Person) new HouseIntermediaryProxy().getInstance(new Customer());
-        person.buyHouse();
-        try {
-            byte[] $Proxy0s = ProxyGenerator.generateProxyClass("$Proxy0", new Class[]{Person.class});
-            FileOutputStream fileOutputStream =
-                    new FileOutputStream("/Users/wangchaojie/Downloads/$Proxy0.class");
-            fileOutputStream.write($Proxy0s);
-            fileOutputStream.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+//        Person person = (Person) new HouseIntermediaryProxy().getInstance(new Customer());
+//        person.buyHouse();
+//        try {
+//            byte[] $Proxy0s = ProxyGenerator.generateProxyClass("$Proxy0", new Class[]{Person.class});
+//            FileOutputStream fileOutputStream =
+//                    new FileOutputStream("/Users/wangchaojie/Downloads/$Proxy0.class");
+//            fileOutputStream.write($Proxy0s);
+//            fileOutputStream.close();
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
     }
 }
