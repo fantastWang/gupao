@@ -1,10 +1,10 @@
-package top.wangcj.chapter03分布式与高并发.chapter01了解多线程的意义和使用.controller;
+package top.wangcj.chapter03分布式与高并发.chapter01了解多线程的意义和使用.demo01.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
-import top.wangcj.chapter03分布式与高并发.chapter01了解多线程的意义和使用.entity.User;
-import top.wangcj.chapter03分布式与高并发.chapter01了解多线程的意义和使用.service.UserService;
+import top.wangcj.chapter03分布式与高并发.chapter01了解多线程的意义和使用.demo01.entity.User;
+import top.wangcj.chapter03分布式与高并发.chapter01了解多线程的意义和使用.demo01.service.UserService;
 
 /**
  * @author wangchaojie

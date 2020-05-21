@@ -1,4 +1,4 @@
-package top.wangcj.chapter03分布式与高并发.chapter01了解多线程的意义和使用.entity;
+package top.wangcj.chapter03分布式与高并发.chapter01了解多线程的意义和使用.demo01.entity;
 
 /**
  * @author wangchaojie

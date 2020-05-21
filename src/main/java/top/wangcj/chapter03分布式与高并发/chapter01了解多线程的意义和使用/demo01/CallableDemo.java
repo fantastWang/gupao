@@ -1,4 +1,4 @@
-package top.wangcj.chapter03分布式与高并发.chapter01了解多线程的意义和使用;
+package top.wangcj.chapter03分布式与高并发.chapter01了解多线程的意义和使用.demo01;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
