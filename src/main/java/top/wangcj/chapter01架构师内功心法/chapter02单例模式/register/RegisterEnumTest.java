@@ -1,6 +1,7 @@
 package top.wangcj.chapter01架构师内功心法.chapter02单例模式.register;
 
-import org.junit.jupiter.api.Test;
+
+import org.junit.Test;
 
 import java.lang.reflect.Constructor;
 
