@@ -1,7 +1,5 @@
 package top.wangcj.chapter03分布式与高并发.chapter01了解多线程的意义和使用.demo01;
 
-import org.junit.Test;
-
 /**
  * 用Thread实现线程
  */
@@ -29,10 +27,5 @@ public class ThreadDemo extends Thread {
         ThreadDemo t = new ThreadDemo();
         t.start();
         System.out.println("Main method");
-    }
-
-    @Test
-    public void test() {
-
     }
 }
