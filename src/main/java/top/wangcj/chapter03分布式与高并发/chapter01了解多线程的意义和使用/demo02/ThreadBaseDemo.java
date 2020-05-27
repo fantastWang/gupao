@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
  * @Description 线程基础：线程的生命周期
  * @Date 2020/5/21 22:35
  **/
-public class Demo02 {
+public class ThreadBaseDemo {
 
     public static void main(String[] args) {
         new Thread(() -> {
@@ -23,10 +23,10 @@ public class Demo02 {
 
         new Thread(() -> {
             while (true) {
-                synchronized (Demo02.class) {
+                synchronized (ThreadBaseDemo.class) {
                     try {
                         /**线程会变成另一种阻塞状态 WAITING：因为是wait()引起的阻塞**/
-                        Demo02.class.wait();
+                        ThreadBaseDemo.class.wait();
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
