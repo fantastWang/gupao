@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="top.wangcj.chapter03分布式与高并发.chapter01了解多线程的意义和使用.demo01.mapper.UserMapper">
+<mapper namespace="top.wangcj.v2019.chapter03分布式与高并发.chapter01了解多线程的意义和使用.demo01.mapper.UserMapper">
 
-    <select id="addUser" parameterType="top.wangcj.chapter03分布式与高并发.chapter01了解多线程的意义和使用.demo01.entity.User">
+    <select id="addUser" parameterType="top.wangcj.v2019.chapter03分布式与高并发.chapter01了解多线程的意义和使用.demo01.entity.User">
         insert into userInfo(name) values (#{name})
     </select>
 </mapper>
