@@ -15,6 +15,7 @@ public class Deep implements Cloneable, Serializable {
     private List<String> list;
     public Deep deepClone(){
         try{
+            //使用序列化进行克隆操作
             ByteArrayOutputStream bos = new ByteArrayOutputStream();
             ObjectOutputStream oos = new ObjectOutputStream(bos);
             oos.writeObject(this);
